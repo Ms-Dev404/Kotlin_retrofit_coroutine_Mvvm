@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.iot.ActivityConfig">
+
+    <Button
+        android:id="@+id/btn_setip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Set Ip Address"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/textView12"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <Button
+        android:id="@+id/btn_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="Register Device"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btn_setip"
+        app:layout_constraintStart_toStartOf="@+id/btn_setip"
+        app:layout_constraintTop_toBottomOf="@+id/btn_setip" />
+
+    <Button
+        android:id="@+id/btn_add_controls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="Add Controls"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_reg"
+        app:layout_constraintStart_toStartOf="@+id/btn_reg"
+        app:layout_constraintTop_toBottomOf="@+id/btn_reg"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="setup System"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:layout_marginTop="50dp"
+        android:lineSpacingExtra="10sp"
+        android:text="Step 1 : Connect Control module with wifi networkrouter.\nstep 2 : Copy displayed Ip address from computer, press add ip address button then type ip address on edit field and press add.\n step 3 : Press register device button, it will shows a progress view after that it shows a message.\nstep 4 : Press Add Controls Button it opens a new window and list all control widgets."
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:layout_constraintVertical_bias="0.045" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
